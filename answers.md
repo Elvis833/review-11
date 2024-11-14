@@ -3,19 +3,37 @@
 ## Answer 1 Create a Simple Component
 
 ```js
-// Write your code here
+const intro = () => {
+ return(
+  <h1>Intro to React!</h1>
+ );
+}
 ```
 
 ## Answer 2 Create a Bigger Component
 
 ```js
-// Write your code here
+const Ciao(){
+  return (
+    <div>
+    <p>Ciao</p>
+    <p>Mundo</p>
+    </div>
+  )
+}
 ```
 
 ## Answer 3 Create an Image Component
 
 ```js
-// Write your code here
+const LoginButton () => {
+  return (
+    <div>
+    <img scr = '../assets/images/profile-picture.jpg'>
+    <button>Sign out</button>
+    </div>
+  )
+}
 ```
 
 ## Answer 4 Create a Component that Uses Variables
@@ -24,15 +42,23 @@
 const username = "john_doe";
 const xp = 737451;
 
-// Write your code here
+return (
+  <div>{username}</div>
+  <div>{xp}</div>
+)
+
 ```
 
 ## Answer 5 Is the Code Correct? Components
 
+No. its incorrect.
+.theres no () bracket after return
+.theres no other Html tags for other bananas after the h1 tag,
+.could of used Fragmen tag instead of section.
+
 ## Answer 6 Export a Component
 
 ```js
-// Modify the code below
 
 const ChapterList = () => {
   return (
@@ -49,16 +75,18 @@ const ChapterList = () => {
     </div>
   );
 };
+export default ChapterList
 ```
-
 ## Answer 7 Import a Component
 
 ```js
 // This is the App.jsx file
-// Write your code here
+import Gallery from Gallery.jsx
 ```
 
 ## Answer 8 Is the Code Correct? JSX
+No, should use div not ul 
+
 
 ## Answer 9 Fix the JSX Bugs
 
@@ -67,13 +95,13 @@ const ChapterList = () => {
 
 const Summary = () => {
   return (
-    <div class="title">
+    <div className="title">
       <h1>My Site!</h1>
     </div>
-    <p class="description">
+    <p className="description">
       You can find my thoughts here
       <br>
-      <b>And <i>I</b></i> have plenty of them!
+      <b>And</b><i>I</i> have plenty of them!
     </p>
   );
 }
@@ -95,4 +123,5 @@ const App = () => {
 
 ## Answer 12 Denise's chat
 
+If you have a criminal record you cant get into cyber security but some jobs can accept you but will only do admin jobs
 
